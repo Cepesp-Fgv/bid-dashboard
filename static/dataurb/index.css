@@ -1,0 +1,1092 @@
+@font-face {
+  src: local('gotham-bold'),
+    url('/static/dataurb/fonts/gothambold.eot?#iefix') format('embedded-opentype'),
+    url('/static/dataurb/fonts/gothambold.woff') format('woff'),
+    url('/static/dataurb/fonts/gothambold.ttf') format('truetype'),
+    url('/static/dataurb/fonts/gothambold.svg#gothambold') format('svg');
+  font-style: normal;
+  font-weight: normal;
+  font-family: 'gotham-bold';
+
+  font-display: fallback;
+}
+
+
+@font-face {
+  src: local('gotham-book'),
+    url('/static/dataurb/fonts/gothambook.eot?#iefix') format('embedded-opentype'),
+    url('/static/dataurb/fonts/gothambook.woff') format('woff'),
+    url('/static/dataurb/fonts/gothambook.ttf') format('truetype'),
+    url('/static/dataurb/fonts/gothambook.svg#gothambook') format('svg');
+  font-style: normal;
+  font-weight: normal;
+  font-family: 'gotham-book';
+
+  font-display: fallback;
+}
+
+@font-face {
+  src: local('gotham-ligth'),
+    url('/static/dataurb/fonts/gothamlight.eot?#iefix') format('embedded-opentype'),
+    url('/static/dataurb/fonts/gothamlight.woff') format('woff'),
+    url('/static/dataurb/fonts/gothamlight.ttf') format('truetype'),
+    url('/static/dataurb/fonts/gothamlight.svg#gothamlight') format('svg');
+  font-style: normal;
+  font-weight: normal;
+  font-family: 'gotham-ligth';
+
+  font-display: fallback;
+}
+
+@font-face {
+  src: local('gotham-medium'),
+    url('/static/dataurb/fonts/gothammedium.eot?#iefix') format('embedded-opentype'),
+    url('/static/dataurb/fonts/gothammedium.woff') format('woff'),
+    url('/static/dataurb/fonts/gothammedium.ttf') format('truetype'),
+    url('/static/dataurb/fonts/gothammedium.svg#gothammedium') format('svg');
+  font-style: normal;
+  font-weight: normal;
+  font-family: 'gotham-medium';
+
+  font-display: fallback;
+}
+
+*,
+::before,
+::after {
+  background-repeat: no-repeat;
+}
+
+:-moz-placeholder {
+  font-size: 1em;
+
+  color: #b1b1b1;
+
+  opacity: 1;
+}
+
+::-moz-placeholder {
+  font-size: 1em;
+
+  color: #b1b1b1;
+
+  opacity: 1;
+}
+
+::-webkit-input-placeholder {
+  font-size: 1em;
+
+  color: #b1b1b1;
+
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  font-size: 1em;
+
+  color: #b1b1b1;
+
+  opacity: 1;
+}
+
+::placeholder {
+  font-size: 1em;
+
+  color: #b1b1b1;
+
+  opacity: 1;
+}
+
+.section {
+  padding-top: 1.8125rem;
+  padding-right: 1.8125rem;
+  padding-bottom: 1.8125rem;
+  padding-left: 1.8125rem;
+}
+
+/* @media screen and (max-width: 768px) {
+  .section {
+    margin-right: -20px;
+    margin-left: -20px;
+  }
+} */
+
+.un-container {
+  margin-right: -20px;
+  margin-left: -20px;
+}
+
+.fgv-container {
+  width: 100%;
+  max-width: 58.75rem;
+
+  margin-top: 0;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-left: auto;
+
+  overflow: hidden;
+}
+
+.home-page .fgv-container {
+  max-width: 72.5rem;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+
+  flex-direction: column;
+
+  min-height: 100%;
+  min-height: 100%;
+
+  padding: 0 20px;
+
+  font-size: 1.125rem;
+  line-height: 1.8125rem;
+  font-family: 'gotham-book',
+    'Trebuchet MS',
+    'Helvetica Neue',
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  background: #eeeeee url('/static/dataurb/bg.png') !important;
+}
+
+.home-page body {
+  background: radial-gradient(circle at 49% 50%, #13326b, #01071f) !important;
+}
+
+/* @media only screen and (max-width: 767px) {
+  body {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+} */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+legend {
+  font-style: normal;
+  font-weight: normal;
+  font-family: 'gotham-bold',
+  'Trebuchet MS',
+  'Helvetica Neue',
+  Arial,
+  Helvetica,
+  sans-serif;
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 1.8125rem;
+
+  text-transform: uppercase;
+}
+
+h3 {
+  margin-top: 0;
+  margin-bottom: 1.8125rem;
+}
+
+p {
+  max-width: 58em;
+
+  margin-top: 0;
+  margin-bottom: 1.8125rem;
+}
+
+form {
+  margin: 0;
+}
+
+.fgv-select {
+  width: 5rem;
+  height: 1.25rem;
+
+  padding: 0;
+  padding-right: 0.75rem;
+  margin: 0;
+
+  font-size: 0.625rem;
+  line-height: 1;
+
+  text-indent: 0.01px;
+  text-overflow: '';
+  text-transform: uppercase;
+
+  color: inherit;
+
+  background-image: url('dataurb/down-anticon.svg');
+  background-position: right 0.25rem center;
+  background-size: 0.5rem auto;
+  background-color: transparent;
+
+  border: solid 1px currentColor;
+  border-radius: 2px;
+
+  box-sizing: content-box;
+
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+.fgv-select option {
+  color: black;
+}
+
+.fgv-select::-ms-expand {
+  display: none;
+}
+
+.home-page .account-masthead {
+  padding-top: 0;
+  padding-bottom: 0;
+
+  background: transparent;
+}
+
+.home-page .site-header {
+  background-image: none;
+  background-color: transparent;
+}
+
+.site-header a {
+  color: inherit;
+}
+
+.header-and-intro {
+  padding-top: 0;
+}
+
+.header-text-logo-tagline {
+  max-height: 55px;
+}
+
+@media only screen and (min-width: 979px) {
+  .header-text-logo-tagline {
+    max-width: 342px;
+  }
+}
+
+.header-text-logo-tagline > h1 {
+  min-width: 342px;
+  min-height: 55px;
+
+  margin: 0 auto;
+
+  overflow: hidden;
+
+  text-indent: 110%;
+  white-space: nowrap;
+
+  background-image: url('/static/dataurb/fgv-data.png');
+  background-position: 50% 0;
+  background-size: 324px auto;
+
+}
+
+.btn-navbar {
+  float: left;
+}
+
+@media only screen and (min-width: 979px) {
+  .btn-navbar {
+    display: none;
+  }
+}
+
+.account-masthead {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.account-masthead .account ul li {
+  color: inherit;
+
+  border-left-color: currentColor;
+}
+
+.account-masthead .account ul li:first-child {
+  border-left-style: none;
+}
+
+.nav-collapse.collapse {
+  display: flex;
+
+  flex-grow: 1;
+
+  padding: 0 0.375rem;
+}
+
+.nav-collapse.collapse > * {
+  margin: 0 0.375rem;
+}
+
+/* NAV-BAR */
+
+.nav-bar-wrapper {
+
+}
+
+.nav-bar {
+  display: flex;
+
+  flex-wrap: wrap;
+  justify-content: center;
+
+  padding: 0;
+  margin: 0;
+
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.home-page .nav-bar {
+  font-size: 1.5rem;
+}
+
+.nav-bar > li,
+.nav-bar__item {
+  padding: 0.25rem 0;
+  margin: 0;
+
+  list-style-type: none;
+}
+
+
+.nav-bar > li > a:hover,
+.nav-bar > li > a:focus {
+  text-decoration: none;
+
+  background: transparent;
+}
+
+.nav-bar a,
+.nav-bar a:link,
+.nav-bar__link {
+  display: block;
+
+  padding-right: 0.5em;
+  padding-left: 0.5em;
+
+  color: inherit;
+}
+
+@media only screen and (min-width: 979px) {
+  .nav-bar > li + li > a {
+    border-left: 1px solid currentColor;
+  }
+
+  .nav-bar > li:fist-child > a {
+    padding-left: 0;
+  }
+
+  .nav-bar > li:last-child > a {
+    padding-right: 0;
+  }
+}
+
+.fgv-language-form {
+  width: max-content;
+
+  margin: 0;
+}
+
+.site-search .field input {
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-right: 0;
+  margin-left: 0;
+
+  box-sizing: border-box;
+}
+
+.site-header {
+  padding-bottom: 0;
+  color: white;
+  background: #13326b url('/static/dataurb/bg.png');
+}
+
+.page-header {
+  background-color: transparent;
+}
+
+@media only screen and (min-width: 979px) {
+  .site-header > .fgv-container {
+    display: flex;
+
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+}
+
+.homepage {
+  margin-right: -20px;
+  margin-left: -20px;
+
+  color: #ffffff;
+}
+
+
+.homepage > .fgv-container:empty {
+  display: none;
+}
+
+main,
+[role='main'] {
+  flex-grow: 1;
+
+  /* padding-right: 1.8125rem;
+  padding-left: 1.8125rem; */
+}
+
+.site-label {
+  position: relative;
+
+  max-width: max-content;
+
+  margin-top: 0;
+  margin-right: auto;
+  margin-bottom: 3.625rem;
+  margin-left: auto;
+
+  font-size: 12.5vw;
+  line-height: 1;
+
+  text-transform: uppercase;
+}
+
+@media only screen and (min-width: 480px) {
+  .site-label {
+    margin-right: auto;
+    margin-left: 0;
+
+    font-size: 3.75rem;
+  }
+}
+
+.site-label::before,
+.site-label::after {
+  position: absolute;
+  bottom: 0;
+
+  height: 0;
+
+  border-width: 1px 0 0 0;
+  border-color: #60bcec;
+
+  content: '';
+}
+
+.site-label::before {
+  right: 50%;
+  left: 0;
+
+  border-style: solid;
+}
+
+.site-label::after {
+  right: 0;
+  left: 50%;
+
+  border-style: dashed;
+}
+
+.site-tagline {
+  margin-top: 0;
+  margin-bottom: 3.625rem;
+
+  font-weight: normal;
+  font-size: 1.8125rem;
+  line-height: 1.5;
+  font-family: 'gotham-ligth';
+
+  text-transform: none;
+}
+
+@media only screen and (min-width: 480px) {
+  .site-tagline {
+    max-width: 28.75rem;
+  }
+}
+
+.fgv-search-form[class] {
+  display: flex;
+
+  align-items: stretch;
+
+  width: 100%;
+  height: 2.5rem;
+  max-width: 28.125rem;
+
+  padding: 0;
+
+  overflow: hidden;
+
+  border: solid 1px #60bcec;
+  border-radius: 4px;
+}
+
+.search-form__field[class] {
+  display: block;
+
+  flex-basis: 100%;
+  flex-grow: 1;
+  flex-shrink: 1;
+
+  width: auto;
+  height: 100%;
+
+  padding-top: 0;
+  padding-bottom: 0;
+  margin: 0;
+
+  background-color: #ffffff;
+
+  border: 0;
+  border-radius: 0;
+}
+
+.search-form__button[class] {
+  display: block;
+
+  flex-basis: 0;
+  flex-grow: 0;
+  flex-shrink: 0;
+
+  width: max-content;
+  height: 100%;
+
+  padding-top: 0;
+  padding-right: 0.75rem;
+  padding-bottom: 0;
+  padding-left: 0.75rem;
+  margin: 0;
+  margin-right: 0;
+
+  font-weight: normal;
+  font-size: 1rem;
+  font-family: 'gotham-bold';
+
+  color: inherit;
+
+  background-color: #60bcec;
+
+  border: 0;
+  border-radius: 0;
+  border-radius: 0;
+}
+
+.intro-and-gallery {
+  padding-top: 0;
+}
+
+.intro-section {
+}
+
+@media only screen and (min-width: 767px) {
+  .intro-section > .fgv-container {
+    min-height: 562px;
+
+    background-image: url('/static/dataurb/blinking-map.svg');
+    background-position: left calc(50% + 202px) top 4px;
+  }
+}
+
+@media only screen and (min-width: 979px) {
+  .intro-section > .fgv-container {
+    min-height: 562px;
+
+    background-position: right 4px;
+  }
+}
+
+.intro-section__title {
+  max-width: max-content;
+
+  font-weight: normal;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  font-family: 'gotham-bold';
+
+  border-bottom: 1px dashed #60bcec;
+}
+
+.intro-section__title::before {
+  float: left;
+
+  width: 1.5em;
+  height: 1.5em;
+
+  margin-right: 0.25em;
+  margin-bottom: -1px;
+
+  background-position: center top;
+  background-size: 75% auto;
+
+  border-bottom: 1px solid #60bcec;
+
+  content: '';
+}
+
+.intro-section__title--cities::before {
+  background-image: url('/static/dataurb/icons/map-icon.svg');
+}
+
+.intro-section__title--data::before {
+  background-image: url('/static/dataurb/icons/data-icon.svg');
+}
+
+/* GALLERY */
+.gallery {
+  display: flex;
+
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  padding-top: 1.8125rem;
+  padding-bottom: 1.8125rem;
+  margin-right: -0.5rem;
+  margin-left: -0.5rem;
+
+  font-size: 1.125rem;
+  line-height: 1;
+
+  text-transform: uppercase;
+}
+/*
+.gallery::before,
+.gallery::after {
+  flex-grow: 1;
+
+  height: 1px;
+
+  margin: 0;
+
+  background-image: radial-gradient(circle at 50% 0, #ffffff, rgba(255, 255, 255, 0));
+
+  content: '';
+}
+
+.gallery::before {
+  margin-right: -8px;
+}
+
+.gallery::after {
+  margin-left: -8px;
+}
+
+@media only screen and (min-width: 211px) {
+  .gallery::after {
+    order: 3;
+  }
+}
+
+@media only screen and (min-width: 422px) {
+  .gallery::after {
+    order: 4;
+  }
+}
+
+@media only screen and (min-width: 633px) {
+  .gallery::after {
+    order: 5;
+  }
+}
+
+@media only screen and (min-width: 844px) {
+  .gallery::after {
+    order: 6;
+  }
+}
+
+@media only screen and (min-width: 1055px) {
+  .gallery::after {
+    order: 7;
+  }
+} */
+
+.gallery__figure {
+  position: relative;
+
+  display: block;
+
+  flex-grow: 1;
+
+  width: 195px;
+  max-width: 33%;
+
+  padding: 0.25rem;
+  margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+
+  list-style: none;
+
+  border-width: 2px;
+  border-style: solid;
+  border-image-source: radial-gradient(circle at 50% 50%, #ffffff, rgba(255, 255, 255, 0) 95%);
+  border-image-slice: 1;
+  border-radius: 4px;
+}
+
+.gallery__figure a,
+.gallery__figure a:link,
+.gallery__figure a:visited,
+.gallery__figure a:hover,
+.gallery__figure a:focus,
+.gallery__figure a:active {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+
+  text-align: center;
+  text-decoration: none;
+
+  color: inherit;
+
+  background-position: center center;
+  background-size: 100% auto;
+
+  border-radius: 10px;
+
+  transition-duration: 300ms;
+  transition-property: background-size, font-size, transform;
+}
+
+.gallery__figure a:hover,
+.gallery__figure a:focus,
+.gallery__figure a:active {
+  font-size: 120%;
+
+  background-size: 110% auto;
+}
+
+.gallery__figure a > img {
+  transition-duration: 300ms;
+  transition-property: transform;
+}
+
+.gallery__figure a:hover > img,
+.gallery__figure a:focus > img,
+.gallery__figure a:active > img {
+  transform: scale(1.10);
+}
+
+.gallery__figure__image {
+  display: block;
+
+  width: 100%;
+  height: 195px;
+  min-width: 195px;
+
+  background-color: gray;
+
+  object-fit: cover;
+
+  box-shadow: 0 2px 4px 1px #01071f;
+}
+
+.gallery__figure--educacao > .gallery__figure__image {
+  background-image: url('/static/dataurb/educacao@2x.jpg');
+}
+
+.gallery__figure--meio_ambiente > .gallery__figure__image {
+  background-image: url('/static/dataurb/meio-ambiente@2x.jpg');
+}
+
+.gallery__figure--mobilidade > .gallery__figure__image {
+  background-image: url('/static/dataurb/mobilidade@2x.jpg');
+}
+
+.gallery__figure--saude > .gallery__figure__image {
+  background-image: url('/static/dataurb/saude@2x.jpg');
+}
+
+.gallery__figure--seguranca > .gallery__figure__image {
+  background-image: url('/static/dataurb/seguranca@2x.jpg');
+}
+
+.gallery__figure__caption {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  display: flex;
+
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.gallery__city {
+  font-weight: bold;
+
+  white-space: nowrap;
+}
+
+.gallery__country {
+  display: block;
+
+  font-family: 'gotham-ligth';
+}
+
+.center {
+  margin-right: auto;
+  margin-left: auto;
+
+  text-align: center;
+}
+
+.description-section {
+  font-family: 'gotham-ligth';
+
+  background-color: #152f4e;
+}
+
+.description-section h2 {
+  font-weight: normal;
+  font-size: 2.25rem;
+  font-family: 'gotham-bold';
+}
+
+.description-section p {
+  max-width: 65.25rem;
+}
+
+.map-section {
+  font-family: 'gotham-ligth', sans-serif;
+
+  background-image: radial-gradient(circle at 49% 50%, #13326b, #01071f);
+}
+
+@media only screen and (min-width: 1200px) {
+  .map-section {
+    min-height: 637px;
+  }
+
+  .map-section > .fgv-container {
+    background-image: url('/static/dataurb/cities-map.svg');
+    background-position: 50% right top 4px;
+  }
+
+  .map-section__content {
+    max-width: 30rem;
+
+    margin-right: 0;
+    margin-left: auto;
+  }
+}
+
+.topic-title {
+  margin-bottom: 0;
+
+  font-weight: normal;
+  font-size: 100%;
+  font-family: 'gotham-medium', sans-serif;
+}
+
+.topic-title::before {
+  display: inline-block;
+
+  width: 0.75rem;
+  height: 0.75rem;
+
+  margin-right: 1rem;
+
+  vertical-align: middle;
+
+  border: solid 0.1875rem #60bcec;
+  border-radius: 100%;
+
+  content: '';
+}
+
+
+.fgv-site-footer {
+  padding-top: 1.8125em;
+  padding-right: 1.8125rem;
+  padding-bottom: 0;
+  padding-left: 1.8125rem;
+  margin-right: -20px;
+  margin-left: -20px;
+
+  font-size: 0.75rem;
+
+  color: #ffffff;
+
+  background: #152f4e none;
+}
+
+.fgv-site-footer > .fgv-container {
+  overflow: hidden;
+}
+
+@media screen and (max-width: 768px) {
+  .fgv-site-footer {
+    margin-right: -20px;
+    margin-left: -20px;
+  }
+}
+
+.fgv-site-footer a {
+  color: inherit;
+}
+
+.social-networks {
+  float: left;
+
+  display: flex;
+
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+
+  width: 100%;
+  max-width: max-content;
+
+  padding: 0;
+  margin-top: 0;
+  margin-right: -0.90625rem;
+  margin-bottom: 0;
+  margin-left: -0.90625rem;
+}
+
+.social-networks__item {
+  padding: 0;
+  margin-top: 0;
+  margin-right: 0.90625rem;
+  margin-bottom: 1.8125rem;
+  margin-left: 0.90625rem;
+
+  list-style-type: none;
+}
+
+.social-networks__item a,
+.social-networks__item img {
+  display: block;
+}
+
+.footer-menu {
+  display: flex;
+
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  padding: 0;
+  margin: 0 -0.90625rem 1.8125rem -0.90625rem;
+}
+
+.footer-menu__title {
+  display: block;
+
+  margin-bottom: 1.8125em;
+
+  font-size: 0.875rem;
+
+  text-transform: uppercase;
+
+  color: #60bcec;
+}
+
+.footer-menu__section {
+  width: max-content;
+
+  padding: 0;
+  margin: 0 1.8125rem 1.8125rem 1.8125rem;
+
+  list-style-type: none;
+}
+
+.footer-menu__section__list {
+  display: block;
+
+  padding: 0;
+  margin: 0;
+}
+
+.footer-menu__item {
+  padding: 0;
+  margin: 0;
+
+  list-style-type: none;
+}
+
+.credit-list {
+  display: flex;
+
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  min-width: 100%;
+
+  margin-top: 0;
+  margin-right: -0.90625rem;
+  margin-bottom: 5.4375rem;
+  margin-left: -0.90625rem;
+
+  justify-items: flex-start;
+}
+
+.credit-list__item {
+  padding: 0;
+  margin-top: 0;
+  margin-right: 0.90625rem;
+  margin-bottom: 0;
+  margin-bottom: 1.8125rem;
+  margin-left: 0.90625rem;
+}
+
+.credit-list__title {
+  font-size: 0.875rem;
+  font-family: 'gotham-ligth', sans-serif;
+
+  text-transform: uppercase;
+}
+
+.developed-by {
+  float: right;
+}
+
+
+.disclaimer {
+  padding-top: 0.90625rem;
+  padding-right: 1.8125rem;
+  padding-bottom: 0.90625rem;
+  padding-left: 1.8125rem;
+  margin-right: -1.8125rem;
+  margin-left: -1.8125rem;
+
+  line-height: 1.8125;
+
+  text-align: center;
+
+  background-color: #01071f;
+}
+
+.disclaimer p {
+  margin-bottom: 0;
+}
+
+.media-grid {
+  display: flex;
+
+  flex-wrap: wrap;
+}
